@@ -2,6 +2,7 @@ import './HomePage.scss';
 import Filter from '../../components/Filter/Filter';
 import greater from '../../assets/icons/greaterthan.svg';
 import SearchResults from '../../components/SearchResults/SearchResults';
+import { SearchComponent } from '../../components/SearchComponent/SearchComponent';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <Filter />
         <div className='main-column'>
           <SearchResults />
+          <SearchComponent />
         </div>
       </main>
     </div>

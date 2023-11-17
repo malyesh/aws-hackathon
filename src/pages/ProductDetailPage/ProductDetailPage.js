@@ -1,4 +1,4 @@
-import './ProductDetail.scss';
+import './ProductDetailPage.scss';
 
 export default function ProductDetailPage() {
   return (

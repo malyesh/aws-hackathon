@@ -15,6 +15,7 @@
     display: flex;
     padding: 32px;
   }
+
   &__1 {
     color: $light-blue;
     font-weight: 600;
@@ -22,11 +23,13 @@
     border-bottom: 1px solid $light-blue;
     width: fit-content;
   }
+
   &__icon {
     height: 22px;
     width: 16px;
     margin: 0 0.75rem;
   }
+
   &_2 {
     color: $text-grey;
     font-weight: 600;
@@ -35,4 +38,10 @@
 
 .main-container {
   padding: 0 32px;
+  display: flex;
+}
+
+.main-column {
+  padding: 0 0 0 32px;
+  width: 100%;
 }

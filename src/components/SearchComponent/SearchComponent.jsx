@@ -1,11 +1,6 @@
 import './SearchComponent.scss';
 
-export const SearchComponent = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('clicked');
-  };
-
+export const SearchComponent = ({ handleSubmit }) => {
   return (
     <div className='search'>
       <h3 className='search__title'>Browse Catalog</h3>
@@ -56,7 +51,12 @@ export const SearchComponent = () => {
                 Telecommunications
               </option>
             </select>
-            <input type='text' placeholder='search' className='search__input' />
+            <input
+              type='text'
+              placeholder='search'
+              className='search__input'
+              name='searchInput'
+            />
           </div>
           <button type='submit' className='search__button'>
             Search

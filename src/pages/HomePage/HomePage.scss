@@ -1,2 +1,38 @@
 @use '../../styles/partials/globals' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+
+.body__container {
+  background-color: $background-white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumb {
+  &-container {
+    display: flex;
+    padding: 32px;
+  }
+  &__1 {
+    color: $light-blue;
+    font-weight: 600;
+    padding-bottom: 1px;
+    border-bottom: 1px solid $light-blue;
+    width: fit-content;
+  }
+  &__icon {
+    height: 22px;
+    width: 16px;
+    margin: 0 0.75rem;
+  }
+  &_2 {
+    color: $text-grey;
+    font-weight: 600;
+  }
+}
+
+.main-container {
+  padding: 0 32px;
+}

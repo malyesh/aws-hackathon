@@ -22,7 +22,6 @@ export const SearchComponent = () => {
                                 <option value="retail-location-marketing" name="retail-location-marketing">Retail, Location & Marketing</option>
                                 <option value="telecommunications" name="telecommunications">Telecommunications</option>
                             </select>
-
                         </select>
                         <input type="text" placeholder='search' className='search__input' />
                     </div>

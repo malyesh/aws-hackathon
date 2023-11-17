@@ -16,8 +16,8 @@ export default function HomePage() {
       <main className='main-container'>
         <Filter />
         <div className='main-column'>
-          <SearchResults />
           <SearchComponent />
+          <SearchResults />
         </div>
       </main>
     </div>

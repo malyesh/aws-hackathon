@@ -3,29 +3,59 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/fonts' as *;
 
-.home__body {
+// .home__body {
+//   background-color: $background-white;
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   &--head {
+//     display: flex;
+//     padding: 1rem;
+//   }
+//   &--a {
+//     color: $light-blue;
+//     font-weight: 600;
+//     text-decoration: none;
+//     padding-bottom: 1px;
+//     border-bottom: 1px solid $light-blue;
+//     width: fit-content;
+//   }
+//   &--icon {
+//     height: 22px;
+//     width: 16px;
+//     margin: 0 0.75rem;
+//   }
+//   &--text {
+//     color: $text-grey;
+//     font-weight: 600;
+//   }
+// }
+
+.body__container {
   background-color: $background-white;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  &--head {
+}
+
+.breadcrumb {
+  &-container {
     display: flex;
     padding: 1rem;
   }
-  &--a {
+  &_1 {
     color: $light-blue;
     font-weight: 600;
-    text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid $light-blue;
     width: fit-content;
   }
-  &--icon {
+  &__icon {
     height: 22px;
     width: 16px;
     margin: 0 0.75rem;
   }
-  &--text {
+  &_2 {
     color: $text-grey;
     font-weight: 600;
   }

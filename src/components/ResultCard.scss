@@ -1,0 +1,42 @@
+@use '../styles/partials/globals' as *;
+@use '../styles/partials/mixins' as *;
+@use '../styles/partials/variables' as *;
+
+
+.result-card {
+    width: 200px;
+    height: 100px;
+
+    &__img-column {
+        &--img {}
+
+        &--price {}
+    }
+
+    &__content-column {
+        &--result-title {}
+
+        &--result-subtitle {}
+
+        &--result-description {}
+    }
+
+    &__bottom {}
+
+    &__bottom-left {
+        &--upload-date {}
+
+        &--subscription-length {}
+    }
+
+    &__bottom-right {
+        &--expand-text {}
+
+        &--text {}
+
+        &--img-box {}
+
+        &--img {}
+    }
+
+}

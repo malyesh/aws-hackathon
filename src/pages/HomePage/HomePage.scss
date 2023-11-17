@@ -3,37 +3,9 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/fonts' as *;
 
-// .home__body {
-//   background-color: $background-white;
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   &--head {
-//     display: flex;
-//     padding: 1rem;
-//   }
-//   &--a {
-//     color: $light-blue;
-//     font-weight: 600;
-//     text-decoration: none;
-//     padding-bottom: 1px;
-//     border-bottom: 1px solid $light-blue;
-//     width: fit-content;
-//   }
-//   &--icon {
-//     height: 22px;
-//     width: 16px;
-//     margin: 0 0.75rem;
-//   }
-//   &--text {
-//     color: $text-grey;
-//     font-weight: 600;
-//   }
-// }
-
 .body__container {
   background-color: $background-white;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -41,9 +13,9 @@
 .breadcrumb {
   &-container {
     display: flex;
-    padding: 1rem;
+    padding: 32px;
   }
-  &_1 {
+  &__1 {
     color: $light-blue;
     font-weight: 600;
     padding-bottom: 1px;
@@ -59,4 +31,8 @@
     color: $text-grey;
     font-weight: 600;
   }
+}
+
+.main-container {
+  padding: 0 32px;
 }

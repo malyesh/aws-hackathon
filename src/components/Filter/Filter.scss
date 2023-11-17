@@ -4,26 +4,37 @@
 @use '../../styles/partials/fonts' as *;
 
 .filter {
-  // width: 18%;
-  // width: fit-content;
-  width: 213px;
+  width: 212px;
+
+  // display: flex;
+  // align-self: flex-start;
   &__header {
+    position: sticky;
+    top: 0;
   }
   &__title {
     color: $text-black;
     background-color: $header-white;
-    padding: 1rem 2rem;
+    padding: 24px 2rem;
   }
   &__body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 0.5rem;
+    padding: 8px;
     align-items: flex-start;
+    &--title {
+      padding-bottom: 12px;
+      font-weight: 500;
+    }
     &--section {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      text-align: start;
+      padding-bottom: 24px;
+      padding-right: 16px;
+      padding-left: 16px;
     }
   }
   &__check {
@@ -31,4 +42,19 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  &__input {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 12px;
+  }
+}
+
+input[type='checkbox'] {
+  margin-right: 3px;
+  display: flex;
+  height: 20px;
+}
+
+label {
+  text-align: start;
 }

@@ -18,9 +18,11 @@ export default function Header() {
       </div>
 
       <div className='header__search'>
-        <img className='header__search--icon' src={search} alt='search' />
-        <input className='header__search--input' placeholder='Search' />
-        <p className='header__search--placeholder'>[Alt+S]</p>
+        <div className='header__search--background'>
+          <img className='header__search--icon' src={search} alt='search' />
+          <input className='header__search--input' placeholder='Search' />
+          <p className='header__search--placeholder'>[Alt+S]</p>
+        </div>
       </div>
 
       <div className='header__end'>
@@ -33,7 +35,7 @@ export default function Header() {
           <img className='carrot' src={carrot} alt='carrot' />
         </div>
         <div className='header__icon--combo with__carrot with__carrot--name'>
-          <p className='header__icon--text'>malyeshmerni</p>
+          <p className='header__icon--text'>chocolate-donuts</p>
           <img className='carrot' src={carrot} alt='carrot' />
         </div>
       </div>

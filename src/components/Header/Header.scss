@@ -1,6 +1,7 @@
 @use '../../styles/partials/globals' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
 
 .header {
   display: flex;
@@ -35,6 +36,11 @@
     flex: 1 !important;
     display: flex !important;
     justify-content: unset !important;
+    &--background {
+      background-color: #16191f;
+      width: 538.8px !important;
+    }
+
     &--icon {
       position: absolute;
       height: 16px;
@@ -66,11 +72,13 @@
       display: flex !important;
       max-width: 540px !important;
       align-items: center !important;
-
       &::placeholder {
         font-weight: 600;
         // display: flex;
-        font-family: 'Helvetica Neue';
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: rgb(135, 149, 150);
+        font-family: 'Helvetica Neue', Arial, sans-serif;
         font-style: italic;
       }
     }

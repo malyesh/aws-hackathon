@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Pet Food for Sensitive Stomach",
+    "logo": "https://mma.prnewswire.com/media/619538/Label_Insight_Logo.jpg?w=200",
+    "provider": "Label Insight",
+    "description": "Includes a list of all the products that are designed for a sensitive stomach dietary condition.",
+    "price": "$2,500",
+    "subscription": "Unlimited",
+    "review": 4,
+    "number_of_reviews": 245,
+    "published": "2021",
+    "last_updated": "1yr ago",
+    "data_size": "4.4MB (250,000 rows)"
+  },
+  {
+    "name": "Global Pet Supplement Market Size, Share, 2032",
+    "logo": "https://www.marketresearchstore.com/images/site_logo_b.png",
+    "provider": "Market Research Store",
+    "description": "Pet Supplement Market Size, Share, Growth Analysis Report by Pet Type, Product Type, Distribution Channel and Region.",
+    "price": "Free",
+    "subscription": "1 month subscription",
+    "review": 5,
+    "number_of_reviews": 2035,
+    "published": "2022",
+    "last_updated": "6mo ago",
+    "data_size": "4.4MB (250,000 rows)"
+  },
+  {
+    "name": "Animal Healthcare Market",
+    "logo": "https://www.marketresearchstore.com/images/site_logo_b.png",
+    "provider": "Market Research Store",
+    "description": "Animal Healthcare Market Size, Trends and Insights by Animal Type, Product, Distribution Channel, End User and Region.",
+    "price": "Free",
+    "subscription": "1 month subscription",
+    "review": 2,
+    "number_of_reviews": 456,
+    "published": "2021",
+    "last_updated": "2yr ago",
+    "data_size": "1MB (1000 rows)"
+  },
+  {
+    "name": "Pet Nutraceuticals Market",
+    "logo": "https://contentenginellc.com/wp-content/themes/contentenginellc/assets/img/CE-imgs/ce-logo-ftr.png",
+    "provider": "CE ResearchHub",
+    "description": "Market characteristics, size and growth, segmentation, regional and country breakdowns, competitive landscape, market shares, trends and strategies.",
+    "price": "$2,350",
+    "subscription": "6 month subscription",
+    "review": 5,
+    "number_of_reviews": 852,
+    "published": "2019",
+    "last_updated": "1mo ago",
+    "data_size": "1MB (500 rows)"
+  },
+  {
+    "name": "Veterinary Surgical Instruments Market Global Analysis",
+    "logo": "https://contentenginellc.com/wp-content/themes/contentenginellc/assets/img/CE-imgs/ce-logo-ftr.png",
+    "provider": "CE ResearchHub",
+    "description": "Market segmentations of surgical instruments by types, applications, animals and regions.",
+    "price": "$4,950",
+    "subscription": "6 month subscription",
+    "review": 5,
+    "number_of_reviews": 202,
+    "published": "2017",
+    "last_updated": "3mo ago",
+    "data_size": "1MB (750 rows)"
+  }
+]

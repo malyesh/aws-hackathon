@@ -1,0 +1,33 @@
+import './SearchResults.scss';
+import ResultCard from '../ResultCard';
+import dataSheet from '../../data/data.json';
+
+export default function SearchResults() {
+  return (
+    <section className='main'>
+      <p className='main__class--page caption'>Results 20 of 500</p>
+      <div className='main__body--section'>
+        <div className='main--section__header'>
+          <h1 className='main__header--title'>Trending datasets</h1>
+          <p className='main__header--caption'>see all</p>
+        </div>
+
+        <div className='result__list'>
+          {dataSheet.map((data) => {
+            return <ResultCard data={data} />;
+          })}
+        </div>
+
+        <div className='main--section__header'>
+          <h1 className='main__header--title'>Suggested datasets</h1>
+          <p className='main__header--caption'>see all</p>
+        </div>
+      </div>
+      <div className='result__list'>
+        {dataSheet.map((data) => {
+          return <ResultCard data={data} />;
+        })}
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,42 @@
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+
+.main {
+  // width: 1131px;
+  flex-grow: 1;
+  margin-left: 1rem;
+  position: relative;
+  &__body--section {
+    background-color: white;
+    // padding: 0 24px;
+  }
+  &__class--page {
+    position: absolute;
+    top: -20px;
+  }
+  &--section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 24px;
+    background-color: $header-white;
+    &--title {
+    }
+  }
+  &__header {
+    &--caption {
+      color: $light-blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.result__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  padding-top: 0;
+  flex-wrap: wrap;
+}

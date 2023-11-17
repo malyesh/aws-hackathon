@@ -1,10 +1,15 @@
 import './SearchComponent.scss';
 
 export const SearchComponent = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('clicked');
+  };
+
   return (
     <div className='search'>
       <h3 className='search__title'>Browse Catalog</h3>
-      <form action='submit'>
+      <form onSubmit={handleSubmit}>
         <section className='search__input-row'>
           <div className='search__wrap'>
             <select className='search__select' name='category'>
@@ -53,7 +58,9 @@ export const SearchComponent = () => {
             </select>
             <input type='text' placeholder='search' className='search__input' />
           </div>
-          <button className='search__button'>Search</button>
+          <button type='submit' className='search__button'>
+            Search
+          </button>
         </section>
         <section className='search__bottom'>
           <p className='search__bottom--breadcrumbs'>{'<  1 2 3 ... >'}</p>

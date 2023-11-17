@@ -1,4 +1,4 @@
-import React from 'react'
+import './ResultCard.scss';
 
 const ResultCard = () => {
     return (

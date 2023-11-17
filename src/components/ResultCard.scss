@@ -7,36 +7,36 @@
     width: 200px;
     height: 100px;
 
-    &__img-column {
-        &--img {}
+    &__top {
+        &--data-title {}
+    }
 
+    &__detail {
+        &--header {}
+
+        &--logo {}
+
+        &--logo-subtitle {}
+
+        &--description {}
+    }
+
+    &__price-container {
         &--price {}
-    }
-
-    &__content-column {
-        &--result-title {}
-
-        &--result-subtitle {}
-
-        &--result-description {}
-    }
-
-    &__bottom {}
-
-    &__bottom-left {
-        &--upload-date {}
 
         &--subscription-length {}
+
+        &--bottom {}
+
+        &--usability-score {}
+
     }
 
-    &__bottom-right {
-        &--expand-text {}
+    &__bottom {
+        &--published {}
 
-        &--text {}
+        &--updated {}
 
-        &--img-box {}
-
-        &--img {}
+        &--data-size {}
     }
-
 }

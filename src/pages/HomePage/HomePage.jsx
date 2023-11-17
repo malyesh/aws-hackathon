@@ -1,10 +1,12 @@
 import './HomePage.scss';
+import { useState } from 'react';
 import Filter from '../../components/Filter/Filter';
 import greater from '../../assets/icons/greaterthan.svg';
 import SearchResults from '../../components/SearchResults/SearchResults';
 import { SearchComponent } from '../../components/SearchComponent/SearchComponent';
 
 export default function HomePage() {
+  const [headerTitle, setHeaderTitle] = useState();
   return (
     <div className='body__container'>
       <nav className='breadcrumb-container'>

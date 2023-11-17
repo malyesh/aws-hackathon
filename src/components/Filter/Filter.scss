@@ -1,0 +1,14 @@
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+
+.filter {
+  width: 15%;
+  &__title {
+    color: $text-black;
+    background-color: $background-white;
+    padding: 16px 2rem;
+    width: fit-content;
+  }
+}

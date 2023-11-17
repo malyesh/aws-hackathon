@@ -4,11 +4,31 @@
 @use '../../styles/partials/fonts' as *;
 
 .filter {
-  width: 15%;
+  // width: 18%;
+  // width: fit-content;
+  width: 213px;
+  &__header {
+  }
   &__title {
     color: $text-black;
-    background-color: $background-white;
-    padding: 16px 2rem;
-    width: fit-content;
+    background-color: $header-white;
+    padding: 1rem 2rem;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.5rem;
+    align-items: flex-start;
+    &--section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

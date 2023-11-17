@@ -1,0 +1,104 @@
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colors' as *;
+
+.header {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  height: 40px;
+  color: white;
+  background-color: $amazon-blue;
+  &__icon {
+    &--combo {
+      display: flex;
+      margin: 6px 0 !important;
+      padding: 4px 16px !important;
+      border-left: 2px solid #414750;
+    }
+    &--logo {
+      width: 33px;
+      height: 19px;
+      position: relative;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    &--text {
+      font-size: 12px;
+      margin-left: 8px;
+    }
+  }
+
+  &__search {
+    // width: 948px;
+    position: relative;
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: unset !important;
+    &--icon {
+      position: absolute;
+      height: 16px;
+      top: 5px;
+      left: 8px;
+    }
+    &--placeholder {
+      color: rgb(135, 149, 150);
+      position: absolute;
+      top: 5px;
+      left: 490px;
+    }
+    &--input {
+      color: rgb(255, 255, 255) !important;
+      width: 100% !important;
+      border: 1px solid rgb(135, 149, 150) !important;
+      height: 30px !important;
+      position: relative !important;
+      font-size: 14px !important;
+      box-sizing: border-box !important;
+      font-family: 'Amazon Ember', 'Helvetica Neue', Roboto, Arial, sans-serif !important;
+      border-radius: 2px !important;
+      background-color: transparent !important;
+      appearance: textfield !important;
+      padding-right: 63px !important;
+      padding-left: 35px !important;
+      width: 100% !important;
+      margin: 0 !important;
+      display: flex !important;
+      max-width: 540px !important;
+      align-items: center !important;
+
+      &::placeholder {
+        font-weight: 600;
+        // display: flex;
+        font-family: 'Helvetica Neue';
+        font-style: italic;
+      }
+    }
+  }
+
+  &__end {
+    align-items: center;
+    display: flex;
+    &--icon {
+      display: flex;
+      height: 16px;
+      position: relative;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-right: 2px solid #414750;
+      // margin: 6px 0 !important;
+      // padding: 4px 16px !important;
+    }
+  }
+}
+
+.with__carrot {
+  border-left: none;
+  &--name {
+    border-left: 2px solid #414750;
+  }
+}
+.carrot {
+  width: 16px;
+  transform: rotate(180deg);
+}

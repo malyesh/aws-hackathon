@@ -10,6 +10,7 @@
   height: 40px;
   color: white;
   background-color: $amazon-blue;
+
   &__icon {
     &--combo {
       display: flex;
@@ -17,6 +18,7 @@
       padding: 4px 16px !important;
       border-left: 2px solid #414750;
     }
+
     &--logo {
       width: 33px;
       height: 19px;
@@ -24,6 +26,7 @@
       margin-left: 16px;
       margin-right: 16px;
     }
+
     &--text {
       font-size: 12px;
       margin-left: 8px;
@@ -36,6 +39,7 @@
     flex: 1 !important;
     display: flex !important;
     justify-content: unset !important;
+
     &--background {
       background-color: #16191f;
       width: 538.8px !important;
@@ -47,12 +51,14 @@
       top: 5px;
       left: 8px;
     }
+
     &--placeholder {
       color: rgb(135, 149, 150);
       position: absolute;
       top: 5px;
       left: 490px;
     }
+
     &--input {
       color: rgb(255, 255, 255) !important;
       width: 100% !important;
@@ -72,6 +78,7 @@
       display: flex !important;
       max-width: 540px !important;
       align-items: center !important;
+
       &::placeholder {
         font-weight: 600;
         // display: flex;
@@ -87,6 +94,7 @@
   &__end {
     align-items: center;
     display: flex;
+
     &--icon {
       display: flex;
       height: 16px;
@@ -102,10 +110,12 @@
 
 .with__carrot {
   border-left: none;
+
   &--name {
     border-left: 2px solid #414750;
   }
 }
+
 .carrot {
   width: 16px;
   transform: rotate(180deg);

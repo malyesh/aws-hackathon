@@ -19,8 +19,7 @@
     flex-direction: row;
   }
 
-  &__input-category-sel {
-  }
+  &__input-category-sel {}
 
   &__select {
     width: 210px;
@@ -28,12 +27,12 @@
     padding: 0 16px;
     background-color: #333333;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 6px;
     opacity: 85%;
   }
 
   &__wrap {
-    border-radius: 8px;
+    border-radius: 6px;
     border: #333333 solid 1px;
     display: flex;
     flex-direction: row;
@@ -41,7 +40,7 @@
   }
 
   &__input {
-    border-radius: 8px;
+    border-radius: 6px;
     height: 36px;
     padding: 0 16px;
     width: 100%;
@@ -52,7 +51,7 @@
     width: 102px;
     height: 36px;
     padding: 0 16px;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #ff9900;
     margin-left: 20px;
   }
@@ -69,7 +68,7 @@
     padding: 0 8px;
     // background-color: #333333;
     // color: #fff;
-    border-radius: 8px;
+    border-radius: 6px;
     opacity: 85%;
     border: #333333 solid 1px;
   }

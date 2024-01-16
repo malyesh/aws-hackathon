@@ -13,8 +13,8 @@ export default function SearchResults({ dataSheet, title, suggested }) {
         </div>
 
         <div className='result__list'>
-          {dataSheet.map((data) => {
-            return <ResultCard data={data} />;
+          {dataSheet.map((data, index) => {
+            return <ResultCard key={index} data={data} />;
           })}
         </div>
 
@@ -24,8 +24,8 @@ export default function SearchResults({ dataSheet, title, suggested }) {
         </div>
       </div>
       <div className='result__list'>
-        {suggested.map((data) => {
-          return <ResultCard data={data} />;
+        {suggested.map((data, index) => {
+          return <ResultCard key={index} data={data} />;
         })}
       </div>
     </section>

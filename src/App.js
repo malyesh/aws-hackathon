@@ -5,18 +5,18 @@ import Header from './components/Header/Header';
 import './App.scss';
 
 function App() {
-  return (
-    <div className='App'>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/home' element={<HomePage />} />
-          <Route path='/product' element={<ProductDetailPage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<BrowserRouter>
+				<Header />
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/home' element={<HomePage />} />
+					<Route path='/product' element={<ProductDetailPage />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

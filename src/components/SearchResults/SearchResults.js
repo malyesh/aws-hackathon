@@ -31,7 +31,7 @@ export default function SearchResults({ dataSheet, title, suggested, tour, handl
 				{tour.tour && tour.step === 3 ?
 					<div
 						className="tour-step"
-						style={{ bottom: '104%', left: '0' }}
+						style={{ bottom: `calc(100% + 80px)`, left: '0' }}
 					>
 						<p className="tour-step__p">
 							And here, an A.I. returns search results whose context correlates with the original query based on context and current events!

@@ -7,138 +7,153 @@ import { SearchComponent } from '../../components/SearchComponent/SearchComponen
 import axios from 'axios';
 import dataFile from '../../data/data.json';
 
+export default function HomePage({
+  tour,
+  setTour,
+  handleTour,
+  handleTourReverse,
+  scrollDiv,
+}) {
+  const [headerTitle, setHeaderTitle] = useState('Trending datasets');
+  const [data, setData] = useState(dataFile);
+  const [suggested, setSuggested] = useState(dataFile);
+  // const [queryData, setQueryData] = useState();
 
-export default function HomePage({ tour, setTour, handleTour, handleTourReverse }) {
-	const [headerTitle, setHeaderTitle] = useState('Trending datasets');
-	const [data, setData] = useState(dataFile);
-	const [suggested, setSuggested] = useState(dataFile);
-	// const [queryData, setQueryData] = useState();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(e.target.searchInput.value);
+    const query = e.target.searchInput.value;
 
+    // console.log(dataFile);
+    const returnedData = [];
+    const suggestedData = [];
+    dataFile.forEach((obj) => {
+      if (
+        obj.name.toLowerCase().includes(query) ||
+        obj.description.toLowerCase().includes(query)
+      ) {
+        returnedData.push(obj);
+      }
+      // if (obj.description.toLowerCase().includes(query)) {
+      //   returnedData.push(obj);
+      // }
+      else {
+        suggestedData.push(obj);
+      }
+    });
+    console.log(returnedData);
+    setData(returnedData);
+    setSuggested(suggestedData);
+    setHeaderTitle('Resulting datasets');
+    e.target.searchInput.value = '';
 
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-		// console.log(e.target.searchInput.value);
-		const query = e.target.searchInput.value;
+    // const mappedData = dataFile.map((obj) => {
+    //   return { name: obj.name, description: obj.description };
+    // });
+    // console.log(mappedData);
+    // const receivingObject = "content": "on my site, a user's search query is `${searchQuery}`, and my data is '${searchResults.}. I need you to intelligently look through this data, and return to me oly the name objects which contained data that is most potentially related or have crossover with the user's original search query."
 
-		// console.log(dataFile);
-		const returnedData = [];
-		const suggestedData = [];
-		dataFile.forEach((obj) => {
-			if (
-				obj.name.toLowerCase().includes(query) ||
-				obj.description.toLowerCase().includes(query)
-			) {
-				returnedData.push(obj);
-			}
-			// if (obj.description.toLowerCase().includes(query)) {
-			//   returnedData.push(obj);
-			// }
-			else {
-				suggestedData.push(obj);
-			}
-		});
-		console.log(returnedData);
-		setData(returnedData);
-		setSuggested(suggestedData);
-		setHeaderTitle('Resulting datasets');
-		e.target.searchInput.value = '';
+    // console.log();
+    // console.log(mappedData);
+    // const formattedContent = insertObjectPairs(mappedData, query);
+    // console.log(formattedContent);
+    //   const options = {
+    //     method: 'POST',
+    //     url: 'https://chatgpt-best-price.p.rapidapi.com/v1/chat/completions',
+    //     headers: {
+    //       'content-type': 'application/json',
+    //       'X-RapidAPI-Key': '3742fd7577msh2de1990ea10bdf3p1a8845jsnbf211dcc4d2b',
+    //       'X-RapidAPI-Host': 'chatgpt-best-price.p.rapidapi.com',
+    //     },
+    //     data: {
+    //       model: 'gpt-3.5-turbo',
+    //       messages: [
+    //         {
+    //           role: 'user',
+    //           formattedContent,
+    //         }, // this is where we have to put the sentence that we query for the json with
+    //       ],
+    //     },
+    //   };
+    //   //`on my site, a user's search query is ${query}, and my data is ${mappedData}. I need you to intelligently look through this data, and return to me oly the name objects which contained data that is most potentially related or have crossover with the user's original search query.`
+    //   try {
+    //     const response = axios.request(options);
+    //     console.log(response.data);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+  };
 
-		// const mappedData = dataFile.map((obj) => {
-		//   return { name: obj.name, description: obj.description };
-		// });
-		// console.log(mappedData);
-		// const receivingObject = "content": "on my site, a user's search query is `${searchQuery}`, and my data is '${searchResults.}. I need you to intelligently look through this data, and return to me oly the name objects which contained data that is most potentially related or have crossover with the user's original search query."
+  // function insertObjectPairs(objectPairs, query) {
+  //   const objects = JSON.parse(objectPairs);
+  //   console.log(objects);
 
-		// console.log();
-		// console.log(mappedData);
-		// const formattedContent = insertObjectPairs(mappedData, query);
-		// console.log(formattedContent);
-		//   const options = {
-		//     method: 'POST',
-		//     url: 'https://chatgpt-best-price.p.rapidapi.com/v1/chat/completions',
-		//     headers: {
-		//       'content-type': 'application/json',
-		//       'X-RapidAPI-Key': '3742fd7577msh2de1990ea10bdf3p1a8845jsnbf211dcc4d2b',
-		//       'X-RapidAPI-Host': 'chatgpt-best-price.p.rapidapi.com',
-		//     },
-		//     data: {
-		//       model: 'gpt-3.5-turbo',
-		//       messages: [
-		//         {
-		//           role: 'user',
-		//           formattedContent,
-		//         }, // this is where we have to put the sentence that we query for the json with
-		//       ],
-		//     },
-		//   };
-		//   //`on my site, a user's search query is ${query}, and my data is ${mappedData}. I need you to intelligently look through this data, and return to me oly the name objects which contained data that is most potentially related or have crossover with the user's original search query.`
-		//   try {
-		//     const response = axios.request(options);
-		//     console.log(response.data);
-		//   } catch (error) {
-		//     console.error(error);
-		//   }
-	};
+  //   const baseString = {
+  //     content: `on my site, a user's search query is ${query}, and my data is ${objects}. I need you to intelligently look through this data, and return to me oly the name objects which contained data that is most potentially related or have crossover with the user's original search query.`,
+  //   };
+  //   console.log(baseString);
+  //   const formattedPairs = objectPairs
+  //     .map((pair) => `${pair.key}: ${pair.value}`)
+  //     .join(',\n');
 
-	// function insertObjectPairs(objectPairs, query) {
-	//   const objects = JSON.parse(objectPairs);
-	//   console.log(objects);
+  //   baseString.content += `\n\n\`\`\`\n{\n  ${formattedPairs}\n}\n\`\`\`\n`;
 
-	//   const baseString = {
-	//     content: `on my site, a user's search query is ${query}, and my data is ${objects}. I need you to intelligently look through this data, and return to me oly the name objects which contained data that is most potentially related or have crossover with the user's original search query.`,
-	//   };
-	//   console.log(baseString);
-	//   const formattedPairs = objectPairs
-	//     .map((pair) => `${pair.key}: ${pair.value}`)
-	//     .join(',\n');
+  //   return baseString;
+  // }
 
-	//   baseString.content += `\n\n\`\`\`\n{\n  ${formattedPairs}\n}\n\`\`\`\n`;
+  return (
+    <div className='body__container'>
+      <nav className='breadcrumb-container'>
+        <p className='breadcrumb__1'>AWS Data Exchange</p>
+        <img src={greater} alt='chevron img' className='breadcrumb__icon' />
+        <p className='breadcrumb__2'>Browse catalog</p>
+      </nav>
 
-	//   return baseString;
-	// }
+      <main className='main-container'>
+        <Filter />
+        <div className='main-column'>
+          <SearchComponent
+            handleSubmit={handleSubmit}
+            tour={tour}
+            setTour={setTour}
+          />
 
-	return (
-		<div className='body__container'>
-			<nav className='breadcrumb-container'>
-				<p className='breadcrumb__1'>AWS Data Exchange</p>
-				<img src={greater} alt='chevron img' className='breadcrumb__icon' />
-				<p className='breadcrumb__2'>Browse catalog</p>
-			</nav>
+          {tour.tour && tour.step <= 1 ? (
+            <div className='tour-step'>
+              <p className='tour-step__p'>
+                Enter "animal" as your search query.
+              </p>
+              <p
+                className='tour-step__p'
+                style={{ visibility: tour.step === 0 ? 'hidden' : 'visible' }}
+              >
+                Hit the search button.
+              </p>
+              {tour.tour && tour.step === 1 ? (
+                <button
+                  onClick={handleTourReverse}
+                  className='demo-modal__close'
+                >
+                  previous
+                </button>
+              ) : null}
+              <button onClick={handleTour} className='demo-modal__close'>
+                next
+              </button>
+            </div>
+          ) : null}
 
-			<main className='main-container'>
-				<Filter />
-				<div className='main-column'>
-					<SearchComponent handleSubmit={handleSubmit} tour={tour} setTour={setTour} />
-
-					{tour.tour && tour.step <= 1 ?
-						<div className="tour-step">
-							<p className="tour-step__p">
-								Enter "animal" as your search query.
-							</p>
-							<p className="tour-step__p" style={{ visibility: tour.step === 0 ? 'hidden' : 'visible' }}>
-								Hit the search button.
-							</p>
-							{tour.tour && tour.step === 1 ?
-								<button onClick={handleTourReverse} className="demo-modal__close">previous</button>
-								: null
-							}
-							<button onClick={handleTour} className="demo-modal__close">next</button>
-
-
-						</div>
-						: null
-					}
-
-					<SearchResults
-						dataSheet={data}
-						title={headerTitle}
-						suggested={suggested}
-						tour={tour}
-						handleTour={handleTour}
-						handleTourReverse={handleTourReverse}
-					/>
-				</div>
-			</main >
-		</div >
-	);
+          <SearchResults
+            dataSheet={data}
+            title={headerTitle}
+            suggested={suggested}
+            tour={tour}
+            handleTour={handleTour}
+            handleTourReverse={handleTourReverse}
+            scrollDiv={scrollDiv}
+          />
+        </div>
+      </main>
+    </div>
+  );
 }

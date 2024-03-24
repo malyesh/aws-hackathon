@@ -5,10 +5,11 @@
 
 .result-card {
   width: 258px;
-  margin-top: 24px;
-  border: 1px solid lightgray;
-  box-shadow: 0 2px 5px 0 rgba(19, 24, 44, 0.1);
+  margin-top: 1.5rem;
+  border: 0.0625rem solid lightgray;
+  box-shadow: 0 0.125rem 0.3125rem 0 rgba(19, 24, 44, 0.1);
   text-align: start;
+
   &__top {
     &--data-title {
       background-color: $header-white;
@@ -18,10 +19,12 @@
 
   &__detail {
     padding: 1rem;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 0.0625rem solid lightgrey;
+
     &__container {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
+
     &--header {
       display: flex;
       align-items: center;
@@ -29,11 +32,11 @@
     }
 
     &--logo {
-      height: 35px;
+      height: 2.1875rem;
+      margin-right: 0.5rem;
     }
 
-    &--logo-subtitle {
-    }
+    &--logo-subtitle {}
 
     &--description {
       font-weight: 500;
@@ -42,13 +45,12 @@
 
   &__price-container {
     padding: 1rem;
-    // padding-top: 0;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 0.0625rem solid lightgrey;
 
     &--price {
       font-size: 1.5rem;
       font-weight: 500;
-      padding-bottom: 4px;
+      padding-bottom: 0.25rem;
     }
 
     &--subscription-length {
@@ -62,12 +64,13 @@
 
       display: flex;
     }
+
     &--review-amount {
       //   display: flex;
     }
 
     &--usability-score {
-      padding-right: 4px;
+      padding-right: 0.25rem;
     }
   }
 
@@ -75,21 +78,20 @@
     padding: 1rem;
     color: gray;
     font-weight: 500;
-    &--published {
-    }
 
-    &--updated {
-    }
+    &--published {}
 
-    &--data-size {
-    }
+    &--updated {}
+
+    &--data-size {}
   }
 }
 
 .bottom {
   display: flex;
+
   &__title {
     color: $text-black;
-    padding-right: 4px;
+    padding-right: 0.25rem;
   }
 }

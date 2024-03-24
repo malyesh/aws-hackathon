@@ -4,29 +4,31 @@
 @use '../../styles/partials/fonts' as *;
 
 .filter {
-  width: 212px;
+  width: 360px;
 
-  // display: flex;
-  // align-self: flex-start;
   &__header {
     position: sticky;
     top: 0;
   }
+
   &__title {
     color: $text-black;
     background-color: $header-white;
-    padding: 24px 2rem;
+    padding: 1.5rem 2rem;
   }
+
   &__body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 8px;
+    padding: 0.5rem;
     align-items: flex-start;
+
     &--title {
-      padding-bottom: 12px;
+      padding-bottom: 0.75rem;
       font-weight: 500;
     }
+
     &--section {
       display: flex;
       flex-direction: column;
@@ -37,22 +39,24 @@
       padding-left: 16px;
     }
   }
+
   &__check {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   &__input {
     display: flex;
     align-items: flex-start;
-    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
   }
 }
 
 input[type='checkbox'] {
-  margin-right: 3px;
+  margin-right: 0.1875rem;
   display: flex;
-  height: 20px;
+  height: 1.25rem;
 }
 
 label {

@@ -3,74 +3,78 @@
 @use '../../styles/partials/variables' as *;
 
 .search {
-  background-color: #fff;
-  padding: 32px 20px 5px 20px;
-  width: 100%;
+	background-color: #fff;
+	padding: 32px 20px 5px 20px;
+	width: 100%;
+	// position: inherit;
+	// z-index: 5;
 
-  &__title {
-    text-align: left;
-    padding-bottom: 8px;
-    font-size: 24px;
-    margin-left: 8px;
-  }
+	&__title {
+		text-align: left;
+		padding-bottom: 8px;
+		font-size: 24px;
+		margin-left: 8px;
+	}
 
-  &__input-row {
-    display: flex;
-    flex-direction: row;
-  }
+	&__input-row {
+		display: flex;
+		flex-direction: row;
+	}
 
-  &__input-category-sel {
-  }
+	&__input-category-sel {}
 
-  &__select {
-    width: 210px;
-    height: 36px;
-    padding: 0 16px;
-    background-color: #333333;
-    color: #fff;
-    border-radius: 8px;
-    opacity: 85%;
-  }
+	&__select {
+		width: 210px;
+		height: 36px;
+		padding: 0 16px;
+		background-color: #333333;
+		color: #fff;
+		border-radius: 6px;
+		opacity: 85%;
+	}
 
-  &__wrap {
-    border-radius: 8px;
-    border: #333333 solid 1px;
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-  }
+	&__wrap {
+		border-radius: 6px;
+		border: #333333 solid 1px;
+		display: flex;
+		flex-direction: row;
+		width: 60%;
+		position: relative;
 
-  &__input {
-    border-radius: 8px;
-    height: 36px;
-    padding: 0 16px;
-    width: 100%;
-    outline: none;
-  }
+	}
 
-  &__button {
-    width: 102px;
-    height: 36px;
-    padding: 0 16px;
-    border-radius: 8px;
-    background-color: #ff9900;
-    margin-left: 20px;
-  }
+	&__input {
+		border-radius: 6px;
+		height: 36px;
+		padding: 0 16px;
+		width: 100%;
+		outline: none;
+	}
 
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: self-end;
-  }
+	&__button {
+		width: 102px;
+		height: 36px;
+		padding: 0 16px;
+		border-radius: 6px;
+		background-color: #ff9900;
+		margin-left: 20px;
+		position: relative;
+	}
 
-  &__bottom-select {
-    width: 135px;
-    height: 32px;
-    padding: 0 8px;
-    // background-color: #333333;
-    // color: #fff;
-    border-radius: 8px;
-    opacity: 85%;
-    border: #333333 solid 1px;
-  }
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: self-end;
+	}
+
+	&__bottom-select {
+		width: 135px;
+		height: 32px;
+		padding: 0 8px;
+		// background-color: #333333;
+		// color: #fff;
+		border-radius: 6px;
+		opacity: 85%;
+		border: #333333 solid 1px;
+	}
 }

@@ -4,29 +4,28 @@
 @use '../../styles/partials/fonts' as *;
 
 .main {
-  // width: 1131px;
   width: 100%;
   flex-grow: 1;
-  // margin-left: 1rem;
-  margin-top: 36px;
+  margin-top: 2.25rem;
   position: relative;
+
   &__body--section {
     background-color: white;
-    // padding: 0 24px;
   }
+
   &__class--page {
     position: absolute;
-    top: -20px;
+    top: -1.25rem;
   }
+
   &--section__header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 24px;
+    padding: 1.5rem;
     background-color: $header-white;
-    &--title {
-    }
   }
+
   &__header {
     &--caption {
       color: $light-blue;
@@ -37,8 +36,8 @@
 
 .result__list {
   display: flex;
-  justify-content: space-between;
-  padding: 24px;
-  padding-top: 0;
+  // justify-content: space-between;
+  padding: 0 2rem 1.5rem 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
 }
